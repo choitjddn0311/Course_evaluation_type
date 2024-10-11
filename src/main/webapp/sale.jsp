@@ -15,7 +15,7 @@
 				out.println("    <td>" + rs.getString(2) + "</td>");
 				out.println("    <td>" + String.format("%05d",rs.getInt(3)) + "</td>");
 				out.println("    <td>" + rs.getInt(4) + "</td>");
-				out.println("    <td>" + rs.getInt(5) + "</td></tr>");
+				out.println("    <td>" + String.format("%,d",rs.getInt(5)) + "</td></tr>");
 			}
 			stmt.close();
 			con.close();
